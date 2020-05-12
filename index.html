@@ -112,9 +112,7 @@ div.card {
 .q{font-size: 10;}
 /* Add a blue color to the author */
 .author {color: white;}
-.nav-test{
-top: 0;
-}
+
 </style>
 <body>
 
@@ -136,12 +134,12 @@ top: 0;
 </nav>
 
 <!-- Top menu on small screens -->
-<div class="nav-test">
-<header class="w3-conainer w3-top w3-hide-large w3-black w3-large w3-padding">
+
+<header class="w3-conainer w3-top w3-hide-small w3-black w3-large w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
   <span>Shauryaa.Me</span>
 </header>
-</div>
+
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
@@ -568,21 +566,10 @@ Another turing point came into my life in late 2018 when i started a software cr
 
 
 </div>
+
 <script>
 
-</script>
-<script>
 
-  var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav-test").style.top = "0";
-  } else {
-    document.getElementById("nav-test").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
 // Script to open and close sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
